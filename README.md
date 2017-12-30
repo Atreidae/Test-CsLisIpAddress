@@ -11,6 +11,7 @@ Borrows code heavily from [MrAutomation's Powershell version of IpCalc](https://
     
 	
 ## NOTES 
+`
 Version			: 1.01
 Date			: 30/12/2017
 Lync Version		: Tested against Skype4B 2015
@@ -27,7 +28,7 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 :v1.00:	Initial Release
 
 :v0.10:	Internal Build
-	
+`	
 ## LINK  
     https://www.skype4badmin.com
 
