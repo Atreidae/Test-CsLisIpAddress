@@ -11,22 +11,22 @@ Borrows code heavily from [MrAutomation's Powershell version of IpCalc](https://
     
 	
 ## NOTES 
-    Version      	   	: 1.01
-	Date			    : 30/12/2017
-	Lync Version		: Tested against Skype4B 2015
-    Author    			: James Arber
-	Header stolen from  : Greig Sheridan who stole it from Pat Richard's amazing "Get-CsConnections.ps1"
-							
-	:v1.01:	Minor Bug Fix Release
-			-	Fixed Synopsis
-			-	Fixed Auto Update URL
-			-	Various Typos
-			-	Logging Improvements
-			-	GitHub Improvements
+Version			: 1.01
+Date			: 30/12/2017
+Lync Version		: Tested against Skype4B 2015
+Author    		: James Arber
+Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "Get-CsConnections.ps1"
+						
+:v1.01:	Minor Bug Fix Release
+	-Fixed Synopsis
+	-Fixed Auto Update URL
+	-Various Typos
+	-Logging Improvements
+	-GitHub Improvements
 
-	:v1.00:	Initial Release
+:v1.00:	Initial Release
 
-	:v0.10:	Internal Build
+:v0.10:	Internal Build
 	
 ## LINK  
     https://www.skype4badmin.com
@@ -36,10 +36,10 @@ Borrows code heavily from [MrAutomation's Powershell version of IpCalc](https://
 
 ## Script Specifics
 **EXAMPLE** Locates and returns the expected LIS entry for the user at 192.168.150.128 with a 24bit subnet mask (255.255.255.0)
-'PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128/24'
+`PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128/24`
 
 **EXAMPLE** Locates and returns the expected LIS entry for the user at 192.168.150.128 with a subnet mask of 255.255.255.0
-'PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128 255.255.255.0'
+`PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128 255.255.255.0`
 
 **PARAMETER IpAddress**
 IP address of example user in "192.168.0.1" format or with CIDR notation ie "192.168.0.1/24"
