@@ -21,7 +21,9 @@ Lync Version		: Tested against Skype4B 2015
 Author    		: James Arber
 
 Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "Get-CsConnections.ps1"
-						
+
+## Update History
+
 :v1.01:	Minor Bug Fix Release
 
 	-Fixed Synopsis
@@ -37,7 +39,7 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 :v1.00:	Initial Release
 
 :v0.10:	Internal Build
-`	
+	
 ## LINK  
     https://www.skype4badmin.com
 
