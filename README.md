@@ -11,18 +11,27 @@ Borrows code heavily from [MrAutomation's Powershell version of IpCalc](https://
     
 	
 ## NOTES 
-`
+
 Version			: 1.01
+
 Date			: 30/12/2017
+
 Lync Version		: Tested against Skype4B 2015
+
 Author    		: James Arber
+
 Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "Get-CsConnections.ps1"
 						
 :v1.01:	Minor Bug Fix Release
+
 	-Fixed Synopsis
+	
 	-Fixed Auto Update URL
+	
 	-Various Typos
+	
 	-Logging Improvements
+	
 	-GitHub Improvements
 
 :v1.00:	Initial Release
