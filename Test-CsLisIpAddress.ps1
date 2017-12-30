@@ -1,8 +1,8 @@
 ﻿<#  
 .SYNOPSIS  
-	This is a quick and nasty user migration script.
-	It will check if the user is homed on-prem or online. Migrate them to on-prem, enable their Exchange UM
-	It also includes some basic error checking and logging but isnt the most elegant thing out there
+	Checks to see if a user IP Address/Subnet mask combo is present in the Skype4B / Lync LIS database. 
+	If the Subnet is present it's details will be returned. 
+	If not the script will provide feedback suggesting the IP isn't present or warn you of multiple matches.
 
 
 
@@ -13,13 +13,22 @@
     
 	
 .NOTES  
-    Version      	   	: 1.0 (Devel)
-	Date			    : 20/12/2017
+    Version      	   	: 1.01
+	Date			    : 30/12/2017
 	Lync Version		: Tested against Skype4B 2015
     Author    			: James Arber
 	Header stolen from  : Greig Sheridan who stole it from Pat Richard's amazing "Get-CsConnections.ps1"
 							
-	:v0.1:	Internal Build
+	:v1.01:	Minor Bug Fix Release
+			-	Fixed Synopsis
+			-	Fixed Auto Update URL
+			-	Various Typos
+			-	Logging Improvements
+			-	GitHub Improvements
+
+	:v1.00:	Initial Release
+
+	:v0.10:	Internal Build
 	
 .LINK  
     https://www.skype4badmin.com
@@ -73,7 +82,7 @@ param(
 # Script Specific Variables #
 #############################
 
-	$ScriptVersion = 1.0
+	$ScriptVersion = 1.01
 	$StartTime = Get-Date
 	Write-Host "Info: Test-CsLisIpAddress Version $ScriptVersion started at $StartTime" -ForegroundColor Green
 	$LogFileLocation = $PSCommandPath -replace ".ps1",".log" #Where do we store the log files? (In the same folder by default)
@@ -187,7 +196,7 @@ function NetMasktoWildcard ($wildcard) {
 
 #region scriptblock
 #Get Proxy Details
-
+Write-Log -component "Script Block" -Message "Started Logging" -severity 1
 if ($DisableScriptUpdate -eq $false) {
 	Write-Log -component "Self Update" -Message "Checking for Script Update" -severity 1
 	Write-Log -component "Self Update" -Message "Checking for Proxy" -severity 1
@@ -229,7 +238,7 @@ if ($DisableScriptUpdate -eq $false) {
 					{
 						0 {
 							Write-Log -component "Self Update" -Message "User opted to download update" -severity 1
-							start "http://www.skype4badmin.com/australian-holiday-rulesets-for-response-group-service/"
+							start "http://www.skype4badmin.com/find-and-test-user-ip-addresses-in-the-skype-location-database"
 							Write-Log -component "Self Update" -Message "Exiting Script" -severity 3
 							Exit
 						}
@@ -240,7 +249,7 @@ if ($DisableScriptUpdate -eq $false) {
 					}
                  }   
                  Else{
-                 Write-Log -component "Self Update" -Message "Script is upto date" -severity 1
+                 Write-Log -component "Self Update" -Message "Script is up to date" -severity 1
                  }
         
 	       }
