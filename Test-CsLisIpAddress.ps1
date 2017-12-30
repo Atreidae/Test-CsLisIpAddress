@@ -36,10 +36,10 @@
 .KNOWN ISSUES
    None at this stage, this is however in development code and bugs are expected
 
-.EXAMPLE Migrates a single user, configures their voice routing and sets up exchange UM
+.EXAMPLE Locates and returns the expected LIS entry for the user at 192.168.150.128 with a 24bit subnet mask (255.255.255.0)
     PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128/24
 
-.EXAMPLE Migrates all the users in Example.Csv, configures their voice routing and sets up exchange UM
+.EXAMPLE Locates and returns the expected LIS entry for the user at 192.168.150.128 with a subnet mask of 255.255.255.0
 	PS C:\> .\Test-CsLisIpAddress.ps1 192.168.150.128 255.255.255.0
 
 .PARAMETER IpAddress
