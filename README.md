@@ -26,14 +26,10 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 
 **:v1.01: Minor Bug Fix Release**
 
-	-Fixed Synopsis
-	
-	-Fixed Auto Update URL
-	
-	-Various Typos
-	
-	-Logging Improvements
-	
+	-Fixed Synopsis	
+	-Fixed Auto Update URL	
+	-Various Typos	
+	-Logging Improvements	
 	-GitHub Improvements
 
 **:v1.00: Initial Release**
