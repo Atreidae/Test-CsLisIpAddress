@@ -37,7 +37,7 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 **:v0.10: Internal Build**
 	
 ## LINK  
-    [http://www.skype4badmin.com](http://www.skype4badmin.com)
+[http://www.skype4badmin.com](http://www.skype4badmin.com)
 
 ## KNOWN ISSUES
    None at this stage, this is however in development code and bugs are expected
