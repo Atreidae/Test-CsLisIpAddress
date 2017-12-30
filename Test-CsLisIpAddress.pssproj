@@ -29,6 +29,7 @@
     <Compile Include="Test-CsLisIpAddress.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.md" />
     <Content Include="version" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
