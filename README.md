@@ -24,7 +24,7 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 
 ## Update History
 
-:v1.01:	Minor Bug Fix Release
+**:v1.01: Minor Bug Fix Release**
 
 	-Fixed Synopsis
 	
@@ -36,9 +36,9 @@ Header stolen from  	: Greig Sheridan who stole it from Pat Richard's amazing "G
 	
 	-GitHub Improvements
 
-:v1.00:	Initial Release
+**:v1.00: Initial Release**
 
-:v0.10:	Internal Build
+**:v0.10: Internal Build**
 	
 ## LINK  
     https://www.skype4badmin.com
